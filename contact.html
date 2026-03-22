@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1>Upskill</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <LI><a href="about.html">ABOUT</a></LI>
+                    <LI><a href="courses.html">COURSES</a></LI>
+                    <LI><a href="certifications.html">CERTIFICATIONS</a></LI>
+                    <LI><a href="contact.html">CONTACT</a></LI>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" class="input" placeholder="Enter your search">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contact">
+            <h1>Contact Us</h1>
+            <input type="text" class="input" name="name" placeholder="Name">
+            <br>
+            <p id="nameError" class="error"></p>
+            <input type="email" class="input" name="email" placeholder="Email">
+            <br>
+            <p id="emailError" class="error"></p>   
+            <input type="number" class="input" name="phone" placeholder="Phone Number">
+            <br>
+            <p><span id="phoneError" class="error">/p>
+            <textarea name="message" id="" cols="30" rows="10" class="input" placeholder="Message"></textarea>
+            <br>
+            <p><span id="messageError" class="error">/p>
+            <button class="btn" onclick="validate()">Send</button>
+        </div>
+        <div class="details">
+            <h1>College Address:</h1>
+            <br>
+            <p><span>Name:</span> <br>Chaitanya Bharathi Institute of Technology</p>
+            <br>
+            <p><span>Address:</span> <br>Gandipet, Hyderabad, Telangana</p>
+            <br>
+            <p><span>Phone:</span> <br>1234567890</p>
+            <br>
+            <p><span>Email:</span> <br>cbit@gmail.com</p>
+            <br>
+        </div>
+        </div>
+    </div>
+    <script>
+        function validate(){   
+            let name = document.getElementsByName("name")[0].value;
+            let email = document.getElementsByName("email")[0].value;
+            let phone = document.getElementsByName("phone")[0].value;
+
+            let nameError = document.getElementById("nameError");
+            let emailError = document.getElementById("emailError"); 
+            let phoneError = document.getElementById("phoneError");
+
+            let nameRegEx = /^[a-zA-Z\s]+$/;
+            let emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let phoneRegEx = /^\d{10}$/;
+
+            if(name === ""){
+                nameError.textContent = "Name is required";
+            }
+            else if(!nameRegEx.test(name)){
+                nameError.textContent = "Name can only contain letters and spaces";
+            }
+            else{
+                nameError.textContent = "";
+            }
+
+            if(email === ""){
+                emailError.textContent = "Email is required";
+            }
+            else if(!emailRegEx.test(email)){
+                emailError.textContent = "Invalid email format";
+            }
+            else{
+                emailError.textContent = "";
+            }
+
+            if(phone === ""){
+                phoneError.textContent = "Phone number is required";
+            }
+            else if(!phoneRegEx.test(phone)){
+                phoneError.textContent = "Invalid phone number format";
+            }
+            else{
+                phoneError.textContent = "";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

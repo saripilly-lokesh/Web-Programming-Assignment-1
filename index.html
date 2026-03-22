@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upskilling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1>Upskill</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <LI><a href="about.html">ABOUT</a></LI>
+                    <LI><a href="courses.html">COURSES</a></LI>
+                    <LI><a href="certifications.html">CERTIFICATIONS</a></LI>
+                    <LI><a href="contact.html">CONTACT</a></LI>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" class="input" placeholder="Enter your search">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>CBIT <br><span>E-learning Platform</span></h1>
+            <p class="par">Discover the most exciting online courses</p>
+            <a href="#"><button class="btn">JOIN US</button></a>
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <p id="emailError" class="error"></p>
+                <input type="password" name="password" placeholder="Enter Password Here">
+                <p id="passwordError" class="error"></p>
+                <button class="btnn" onclick="validate()"><a href="#"></a>Login</button>
+                <p class="link">Don't have an account <br>
+                    <a href="signup.html">Sign Up</a> here
+                </p>
+                <p class="liw">Log in with:</p>
+                <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon>
+                    </a>
+                    <a href="#"><ion-icon name="logo-Skype"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <h3>Top Courses in <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Artificial
+                Intelligence(AI)</a></h3>
+        <div class="Footer">
+            <div class="course">
+                <img src="Course1.jpg" alt=""><br>
+                <p>Description regarding Course-1</p>
+                <p class="light">Krishai Technologies Private Limited..</p>
+                <p>$499 <del class="light">$999</del></p>
+                <a href="#"><button class="fbtn">Premium</button></a>
+                <span class="bestseller">Bestseller</span>
+            </div>
+            <div class="course">
+                <img src="Course2.jpg" alt=""><br>
+                <p>Description regarding Course-1</p>
+                <p class="light">Krishai Technologies Private Limited..</p>
+                <p>$499 <del class="light">$999</del></p>
+                <a href="#"><button class="fbtn">Premium</button></a>
+                <span class="bestseller">Bestseller</span>
+            </div>
+            <div class="course">
+                <img src="Course3.jpg" alt=""><br>
+                <p>Description regarding Course-1</p>
+                <p class="light">Krishai Technologies Private Limited..</p>
+                <p>$499 <del class="light">$999</del></p>
+                <a href="#"><button class="fbtn">Premium</button></a>
+                <span class="bestseller">Bestseller</span>
+            </div>
+            <div class="course">
+                <img src="Course4.jpg" alt=""><br>
+                <p>Description regarding Course-1</p>
+                <p class="light">Krishai Technologies Private Limited..</p>
+                <p>$499 <del class="light">$999</del></p>
+                <a href="#"><button class="fbtn">Premium</button></a>
+                <span class="bestseller">Bestseller</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        function validate(){
+            let email = document.getElementsByName("email")[0].value;
+            let password = document.getElementsByName("password")[0].value;
+
+            let emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            let passwordRegEx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@!$%*?&])[a-zA-Z0-9@!$%*?&]{8,}$/;
+
+            let emailError = document.getElementById("emailError");
+            let passwordError = document.getElementById("passwordError");
+            if(!emailRegEx.test(email)){
+                emailError.innerText = "Email Invalid";
+            }
+            else{
+                emailError.innerText = "";
+            }
+            if(!passwordRegEx.test(password)){
+                passwordError.innerText = "Password Invalid(min 8 chars)";
+            }
+            else{
+                passwordError.innerText = "";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

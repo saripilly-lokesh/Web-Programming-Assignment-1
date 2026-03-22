@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h1>Upskill</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <LI><a href="about.html">ABOUT</a></LI>
+                        <LI><a href="courses.html">COURSES</a></LI>
+                        <LI><a href="certifications.html">CERTIFICATIONS</a></LI>
+                        <LI><a href="contact.html">CONTACT</a></LI>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" class="input" placeholder="Enter your search">
+                    <a href="#"><button class="btn">Search</button></a>
+                </div>
+            </div>
+            <div class="SignUp">
+            <h1 style="color:#ff7200;font-size:50px;">Sign Up</h1>
+            <input type="text" class="input1" name="name" placeholder="Name">
+            <br>
+            <p id="nameError" class="error"></p>
+            <input type="email" class="input1" name="email" placeholder="Email">
+            <br>
+            <p id="emailError" class="error"></p>
+            <input type="number" class="input1" name="phone" placeholder="Phone Number">
+            <br>
+            <p id="phoneError" class="error"></p>
+            <input type="password" class="input1" name="password" placeholder="Password">
+            <br>
+            <p id="passwordError" class="error"></p>
+            <input type="password" class="input1" name="confirmPassword" placeholder="Confirm Password">
+            <br>
+            <p id="confirmPasswordError" class="error"></p>
+            <input type="date" class="input1" placeholder="Date of Birth" name=""required>
+            <br>
+            <p id="dateError" class="error"></p>
+            <label for="gender">Gender:</label>
+            <input id="male" type="radio" class="radio" name="gender" required>
+            <label for="male">Male</label>
+            <input id="female" type="radio" class="radio" name="gender">
+            <label for="female">Female</label>
+            <br>
+            <p id="genderError" class="error"></p>
+            <br>
+            <a href="#"><button class="btn1" onclick="validate()">Sign Up</button></a>
+            <p class="link">Already have an account <br>
+                <a href="index.html">Login</a> here
+            </p>
+        </div>
+        <script>
+            function validate() {
+                let name = document.getElementsByName("name")[0].value;
+                let email = document.getElementsByName("email")[0].value;
+                let password = document.getElementsByName("password")[0].value;
+                let confirmPassword = document.getElementsByName("confirmPassword")[0].value;
+                let phone = document.getElementsByName("phone")[0].value;
+                let date = document.getElementsByName("date")[0];
+                let gender = document.querySelector('input[name="gender"]:checked');
+
+
+                let nameError = document.getElementById("nameError");
+                let emailError = document.getElementById("emailError");
+                let passwordError = document.getElementById("passwordError");
+                let phoneError = document.getElementById("phoneError");
+                let dateError = document.getElementById("dateError");
+                let genderError = document.getElementById("genderError");
+                let confirmPasswordError = document.getElementById("confirmPasswordError");
+
+                let emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                let phoneRegEx = /^\d{10}$/;
+                let nameRegEx = /^[a-zA-Z\s]+$/;
+                let passwordRegEx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!?*&@#$%]).{8,}$/;
+
+                if(!nameRegEx.test(name)){
+                    nameError.innerText = "Name Invalid";
+                }
+                else{
+                    nameError.innerText = "";
+                }
+                if(!emailRegEx.test(email)){
+                    emailError.innerText = "Email Invalid";
+                }
+                else{
+                    emailError.innerText = "";
+                }   
+                if(!phoneRegEx.test(phone)){
+                    phoneError.innerText = "Phone Number Invalid";
+                }
+                else{
+                    phoneError.innerText = "";
+                }
+                if(!passwordRegEx.test(password)){
+                    passwordError.innerText = "Password Invalid(min 8 chars, 1 uppercase, 1 lowercase, 1 digit, 1 special char)";
+                }
+                else{
+                    passwordError.innerText = "";
+                }
+                if(password !== confirmPassword){
+                    confirmPasswordError.innerText = "Passwords do not match";
+                }
+                else{
+                    confirmPasswordError.innerText = "";
+                }
+                if(!date){
+                    dateError.innerText = "Date of Birth is required";
+                }
+                else{
+                    dateError.innerText = "";
+                }
+                if(!gender){
+                    genderError.innerText = "Gender is required";
+                }
+                else{
+                    genderError.innerText = "";
+                }
+            }
+        </script>
+    </body>
+</html>

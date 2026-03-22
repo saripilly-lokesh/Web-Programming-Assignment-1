@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses>
+  <course>
+    <title>Title-1</title>
+    <instructor>Instructor</instructor>
+    <description>
+      <CourseDetails>This is a something regarding the course, This is the first course in the given list of courses</CourseDetails>
+      <InstructorDetails>Qualified and experienced professional with a strong background in the field.</InstructorDetails>
+      <CourseCurriculum>
+        <Module>Chapter-1</Module>
+        <Module>Chapter-2</Module>
+      </CourseCurriculum>
+      <duration>3 months</duration>
+      <price>Rs. 999</price>
+      <rating>4.2</rating>
+    </description>
+  </course>
+  <course>
+    <title>Title-2</title>
+    <instructor>Instructor 2</instructor>
+    <description>
+      <CourseDetails>This is a something regarding the course, This is the second course in the given list of courses</CourseDetails>
+      <InstructorDetails>Qualified and experienced professional with a strong background in the field.</InstructorDetails>
+      <CourseCurriculum>
+        <Module>Chapter-1</Module>
+        <Module>Chapter-2</Module>
+      </CourseCurriculum>
+      <duration>3 months</duration>
+      <price>Rs. 999</price>
+      <rating>4.3</rating>
+    </description>
+  </course>
+  <course>
+    <title>Title-3</title>
+    <instructor>Instructor 3</instructor>
+    <description>
+      <CourseDetails>This is a something regarding the course, This is the third course in the given list of courses</CourseDetails>
+      <InstructorDetails>Qualified and experienced professional with a strong background in the field.</InstructorDetails>
+      <CourseCurriculum>
+        <Module>Chapter-1</Module>
+        <Module>Chapter-2</Module>
+      </CourseCurriculum>
+      <duration>3 months</duration>
+      <price>Rs. 999</price>
+      <rating>4.5</rating>
+    </description>
+  </course>
+  <course>
+    <title>Title-4</title>
+    <instructor>Instructor 4</instructor>
+    <description>
+      <CourseDetails>This is a something regarding the course, This is the fourth course in the given list of courses</CourseDetails>
+      <InstructorDetails>Qualified and experienced professional with a strong background in the field.</InstructorDetails>
+      <CourseCurriculum>
+        <Module>Chapter-1</Module>
+        <Module>Chapter-2</Module>
+      </CourseCurriculum>
+      <duration>3 months</duration>
+      <price>Rs. 999</price>
+      <rating>4.6</rating>
+    </description>
+  </course>
+  <course>
+    <title>Title-5</title>
+    <instructor>Instructor 5</instructor>
+    <description>
+      <CourseDetails>This is a something regarding the course, This is the fifth course in the given list of courses</CourseDetails>
+      <InstructorDetails>Qualified and experienced professional with a strong background in the field.</InstructorDetails>
+      <CourseCurriculum>
+        <Module>Chapter-1</Module>
+        <Module>Chapter-2</Module>
+      </CourseCurriculum>
+      <duration>3 months</duration>
+      <price>Rs. 999</price>
+      <rating>4.7</rating>
+    </description>
+  </course>
+</courses>

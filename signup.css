@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+}
+.main{
+    width:100%;
+    min-height: 109vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Week-4_image.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+}
+.navbar{
+    width:1400px;
+    height:75px;
+    margin:auto;
+}
+.icon{
+    float:left;
+    color:#ff7200;
+    width:200px;
+    height:70px;
+    padding-left:20px;
+    padding-top:10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.menu{
+    color:white;
+    float:left;
+}
+.menu ul{
+    display:flex;
+    float:left;
+    justify-content: center;
+    align-content:center;
+}
+.menu ul li{
+    list-style:none;
+    margin-top:24px;
+    margin-left:62px;
+    font-size:14px;
+}
+.menu ul li a{
+    text-decoration:none;
+    color:white;
+    font-family:arial;
+}
+.menu ul li a:hover{
+    color:#ff7200;
+    font-weight:bold;
+    transition: 0.4s ease-in-out;
+}
+
+.input{
+    background:transparent;
+    width:200px;
+    height:40px;
+    margin-top:12px;
+    margin-left:62px;
+    color: white;
+    border:2px solid #ff7200;
+    border-right:none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    font-family:'Times New Roman', Times, serif;
+}
+.btn{
+    width:150px;
+    height:44px;
+    margin-left:-4px;
+    background-color:#ff7200;
+    color:white;
+    border:2px solid #ff7200;
+    border-left:none;
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+    cursor:pointer;
+}
+.input:focus{
+    outline:none;
+}
+.btn:focus{
+    outline:none;
+}
+::placeholder{
+    color:white;
+}
+.SignUp{
+    width:600px;
+    height:auto;
+    border:2px solid #ff7200;
+    border-radius: 10px;
+    margin:auto;
+    padding:10px;
+    margin-top:100px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.radio{
+    margin-left:62px;
+    margin-top:12px;
+    color: white;
+    border:2px solid #ff7200;
+    border-right:none;
+    font-size:20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    font-family:'Times New Roman', Times, serif;
+}
+label{
+    color:white;
+    display:inline-block;
+    font-family:'Times New Roman', Times, serif;
+    margin:auto;
+    font-size:20px;
+    margin-top:20px;
+    margin-left:10px;
+}
+.input1{
+    background:transparent;
+    width:500px;
+    border:2px solid #ff7200;
+    border-radius: 5px;
+    margin:auto;
+    padding:10px;
+    margin-top:10px;
+    font-size:20px;
+    color: WHITE;
+    font-family:'Times New Roman', Times, serif;
+}
+.input1::placeholder{
+    color:rgb(84, 82, 82);
+}
+.input1:focus{
+    color:white;
+}
+    
+.link{
+    color:white;
+    font-size:20px;
+    display:block;
+    margin:auto;
+    text-align:center;
+}
+.link a{
+    text-decoration:none;
+    color:#ff7200;
+}
+.link a:hover{
+    font-weight:bold;
+    transition: 0.4s ease-in-out;
+}
+.btn1{
+    width:200px;
+    height:40px;
+    display:block;
+    margin:auto;
+    background-color:#ff7200;
+    color:white;
+    font-size:20px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.btn1:hover{
+    background-color:white;
+    color:#ff7200;
+    font-weight:bold;
+    transition: 0.4s ease-in-out;
+}
+a{
+    text-decoration:none;
+}
+
+::placeholder{
+    color:rgb(89, 88, 88);
+}
+
+.error{
+    color:red;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: 'Times New Roman', Times, serif;
+}

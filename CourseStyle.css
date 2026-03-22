@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(Week-4_image.jpg);
+    width: 100%;
+    min-height: 109vh;
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    z-index: -1;
+}
+
+.navbar {
+    width: 1400px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    float: left;
+    color: #ff7200;
+    width: 200px;
+    height: 70px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    color: white;
+    float: left;
+}
+
+.menu ul {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-top: 24px;
+    margin-left: 62px;
+    font-size: 14px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+}
+
+.menu ul li a:hover {
+    color: #ff7200;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.input {
+    background: transparent;
+    width: 200px;
+    height: 40px;
+    margin-top: 12px;
+    margin-left: 62px;
+    color: white;
+    border: 2px solid #ff7200;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn1 {
+    width: 150px;
+    height: 44px;
+    margin-left: -4px;
+    background-color: #ff7200;
+    color: white;
+    border: 2px solid #ff7200;
+    border-left: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.btn1:focus {
+    outline: none;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: #ff7200;
+    transition: 0.4s ease-in-out;
+}
+
+::placeholder {
+    color: white;
+}
+
+.ListCourse img {
+    width: 240px;
+
+}
+
+h1 {
+    color: #ff7200;
+    width: 200px;
+    height: 40px;
+    
+}
+
+.main .Navbar {
+    width: 1400px;
+    height: auto;
+    margin: auto;
+    border: 100px light #ff7200;
+    border-radius: 10px;
+}
+
+.Course {
+    padding: 30px;
+    height: 250px;
+    border: 1px solid white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
+    border-radius: 25px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;    
+}
+
+.Course p {
+    position: relative;
+    left: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    background-color: #ff7200;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn:hover {
+    transition: 0.5s;
+    color: #ff7200;
+    background-color: white;
+}

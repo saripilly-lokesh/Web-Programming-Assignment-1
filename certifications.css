@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    min-height: 109vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Week-4_image.jpg);
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+}
+
+.navbar {
+    width: 1400px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    float: left;
+    color: #ff7200;
+    width: 200px;
+    height: 70px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    color: white;
+    float: left;
+}
+
+.menu ul {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-top: 24px;
+    margin-left: 62px;
+    font-size: 14px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+}
+
+.menu ul li a:hover {
+    color: #ff7200;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.input {
+    background: transparent;
+    width: 200px;
+    height: 40px;
+    margin-top: 12px;
+    margin-left: 62px;
+    color: white;
+    border: 2px solid #ff7200;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn {
+    width: 150px;
+    height: 44px;
+    margin-left: -4px;
+    background-color: #ff7200;
+    color: white;
+    border: 2px solid #ff7200;
+    border-left: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+.certifications {
+    width: 1360px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.certifications h1 {
+    color: #ff7200;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.certificate {
+    width: 1300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.certificate h2 {
+    color: #ff7200;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.certificate img {
+    width: 420px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.p {
+    color: white;
+    position: relative;
+    top: -100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    margin-left: 20px;
+}
+
+.span {
+    color: #ff7200;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: #ff7200;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;  
+}
+.a:hover{
+    background-color: white;
+    color:#ff7200;
+    transition: 0.4s ease-in-out;
+}
